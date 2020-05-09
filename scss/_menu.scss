@@ -10,7 +10,7 @@
     width: 2.8rem;
     height: 3px;
     margin: 0 0 .5rem 0;
-    background: #fff;
+    background: set-text-color(#000);
     @include easeOut;
   }
 
