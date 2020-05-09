@@ -1,5 +1,75 @@
-*{
-  padding:0;
+@import "config";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include background();
+  background-color: $color-primary;
+  color: #fff;
+  height: 100%;
   margin:0;
-  box-sizing: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+// headings
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  &.lg-heading {
+    font-size: 9.6rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: .2rem 1rem;
+    background-color: lighten($color-primary, .5);
+  }
+}
+
+
+// links
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  position: sticky;
+  width: 100%;
+  z-index:2;
+}
+
+.text-secondary {
+  color:$secondary-color;
+}
+
+// main styling
+main {
+  padding: 4rem;
+  height: 100%;
+
+  // will apply to icons inside the main
+  .icons {
+    margin-top: 1rem;
+
+    // links inside the icons
+    a {
+      padding: 0.4rem;
+      
+      
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+  &#home {
+    overflow: hidden;
+    margin-top: 20vh;
+  }
+
 }

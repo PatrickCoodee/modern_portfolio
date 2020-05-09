@@ -1,4 +1,60 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0; }
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed; }
+
+h1,
+h2,
+h3 {
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 9.6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: .2rem 1rem;
+    background-color: #343434; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.header {
+  position: sticky;
+  width: 100%;
+  z-index: 2; }
+
+.text-secondary {
+  color: #eece1a; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #eece1a;
+        transition: all .4s ease-out; }
+  main#home {
+    overflow: hidden;
+    margin-top: 20vh; }

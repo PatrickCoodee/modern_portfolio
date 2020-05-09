@@ -1,0 +1,29 @@
+$color-primary: #333;
+$secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url('../img/background.jpg');
+$background-opacity: 0.8;
+
+@mixin easeOut {
+  transition: all .4s ease-out;
+}
+
+@mixin background {
+  //if show-home-img is true
+  @if $show-home-image {
+    &#bg-img {
+      background-image: linear-gradient(to bottom, 
+      rgba(0,0,0,$background-opacity),
+      rgba(0,0,0,$background-opacity)), $home-image;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  }
+}
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
