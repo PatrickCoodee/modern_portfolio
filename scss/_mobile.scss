@@ -1,10 +1,14 @@
 // wide screens
 @include mediaXl {
-  
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 // desktops
 @include mediaLg {
-  
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 // Tablets and Small laptops
 @include mediaMd {
@@ -17,9 +21,6 @@
       margin-bottom: 1rem;
     }
   }
-  
-
- 
 
   .menu-nav,
   .menu-branding {
@@ -57,10 +58,18 @@
   grid-template-columns: 1fr;
   }
  
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 // smartphones
 @include mediaSm {
   main#home h1 {
     padding-top: 10vh;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
